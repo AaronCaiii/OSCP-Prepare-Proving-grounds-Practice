@@ -22,7 +22,6 @@
 | Snookums      | Linux            | Intermediate | ✅(08/17/2023) | `simple php photo gallery` RCE -> get mysql password -> get michael password ->change `/etc/passwd` permission -> add new root account -> switch user to root. |
 | Exfiltrated   | Linux            | Easy         | ✅(08/17/2023) | 80 port jump to `exfiltrated.offsec` -> `panel` with easy password `admin:admin`> `Subrion CMS version 4.2.1` has RCE -> get rev shell -> `cronjob exiftool` -> upload malicious images -> Wait `cronjob` Get root. |
 | Voip          | Linux            | Intermediate | ✅(08/17/2023) | SIP leak->get raw data->restore `wav` file -> get password -> `hydra` brute force password login to voiper -> sudo su |
-| ERP           | Linux            | Intermediate | ⭕Pending      | Stock on SQLi                                                |
 | Depreciated   | Linux            | Intermediate | ✅(08/17/2023) | port 80 check source code find the `GraphiQL` path->navigate to 8433 get user list and get `userOTP` -> Use `nc` connect to 5132 -> Get Peter's password to login `ssh`-> Use `PwnKit` PE |
 | Wheels        | Linux            | Easy         | ✅(08/17/2023) | register with email -> `xpath` injection -> get bob's password to login `ssh` -> find unknow `suid` application -> use `/opt/get-list` to PE |
 | Nickel        | Windows          | Intermediate | ✅(08/18/2023) | Port 33333 Change request method to POST->Get user's password to login ssh-> get pdf file crack password->RCE to add local administator to PE. |
